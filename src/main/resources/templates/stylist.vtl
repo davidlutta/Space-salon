@@ -1,0 +1,32 @@
+<h1 class="header">Stylists</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="wrapperOfThings">
+    #foreach ($stylist in $stylists)
+
+        <div class="styleCard">
+            <br>
+            <p class="header2">STYLIST'S NAME</p>
+            <br>
+            <br>
+            <p class="displayName" style="color:  Black; text-decoration:  none;">$stylist.getName()</p>
+                <br>
+                <hr>
+                <br>
+                <p class="header2">STYLIST'S STYLE</p>
+            <br>
+            <br>
+            <br>
+            <p class="displayName" style="color:  Black; text-decoration:  none;">$stylist.getStyle()</p>
+
+            <a href="/stylist/$stylist.getId()/viewClients"><button>View Stylist</button></a>
+        </div>
+    #end
+</div>
+
+
+
+<a href="/"><button>Add New Stylist</button></a>

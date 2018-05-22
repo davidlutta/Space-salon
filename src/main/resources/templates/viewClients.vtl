@@ -1,0 +1,18 @@
+
+   <div class="wrapperOfThings">
+#foreach($client in $clients)
+        <div class="styleCard">
+            <p class="header2">CLIENT NAME:</p>
+            <p>$client.getClientName()</p>
+            <hr>
+            <p class="header2">CLIENT STYLE:</p>
+            <p>$client.getClientStyle()</p>
+        <a href="/client/$client.getId()/update"><button>Update client</button></a>
+        <form action="/client/$client.getId()" method="post">
+            <button type="submit" id="delete-client">Delete this client</button>
+        </form>
+        </div>
+#end
+   </div>
+
+<a href="/clients/new"><button>Add a new client</button></a>

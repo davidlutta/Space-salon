@@ -1,0 +1,22 @@
+
+#foreach($client in $clients)
+    <p>$client.getClientName()</p>
+<form action="/client/$client.getId()" method="post">
+
+    <button type="submit" class="btn btn-info" id="delete-client">Delete this client</button>
+
+</form>
+#end
+
+<a href="/clients/new">Add a new client</a>
+<br>
+<br>
+<br>
+<br>
+
+<form action="/stylist/$stylist.getId()" method="post">
+
+    <button type="submit" class="btn btn-info" id="delete-stylist">Delete this stylist</button>
+
+</form>
+

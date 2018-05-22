@@ -1,0 +1,29 @@
+
+   <div class="wrapperOfThings">
+#foreach($client in $clients)
+    <div class="clientWrapper">
+        <p><a href="/stylist/$stylist.getId()/client/$client.getId()">$client.getClientName()</a></p>
+
+        <form action="/client/$client.getId()" method="post">
+
+            <button type="submit" class="btn btn-info" id="delete-client">Delete this client</button>
+
+        </form>
+        <a href="/client/$client.getId()/update"><button>Update client</button></a>
+
+    </div>
+#end
+   </div>
+
+<a href="/clients/new">Add a new client</a>
+<br>
+<br>
+<br>
+<br>
+
+
+<form action="/stylist/$stylist.getId()" method="post">
+
+    <button type="submit" class="btn btn-info" id="delete-stylist">Delete this stylist</button>
+
+</form>
