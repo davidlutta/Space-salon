@@ -15,9 +15,9 @@ This is an app made using Java and Spark where users can enter stylists and clie
 ```
 * Clone the project 
 * Open the command line
-*Run $ gradle build
-*Run $ gradle run
-*Open your Browser and enter the link http://localhost:4567
+* Run $ gradle build
+* Run $ gradle run
+* Open your Browser and enter the link http://localhost:4567
 ```
 ## Known Bugs
 There are no known bugs if you find some please contact me.
